@@ -27,11 +27,11 @@ body {
 
 h1 {
   color: #06365f;
-  padding: 10px;
+  padding: 0px 0px 0px 40px;
 }
 
 p {
-  padding: 10px;
+  padding: 10px 0px 40px 40px;
 }
 
 a {
@@ -43,7 +43,7 @@ a {
 #phone_image_box {
   border-radius: 5px;
   height: 600px;
-  width: 500px;
+  width: 320px;
   display: inline block;
   float: left;
 }
@@ -53,7 +53,7 @@ a {
   border-radius: 5px;
   margin: 60px auto;
   height: 600px;
-  width: 600px;
+  width: 700px;
   display: inline block;
   float: right;
 }
@@ -63,30 +63,50 @@ a {
   border-radius: 5px;
   margin: 30px auto;
   height: 600px;
-  width: 600px;
+  width: 700px;
   display: inline block;
   float: right;
 }
 
 #iphoneButton {
 display: inline-block;
-padding: 10px 0px 0px 5px;
+padding: 15px 15px 15px 40px;
 }
 
 #googleButton {
   display: inline-block;
-  padding: 10px;
+  padding: 15px;
 }
 
 #homeButton {
   border: 1px solid darkblue;
-  height: 30px;
+  border-radius: 2px;
+  height: 40px;
   width: 100px;
+  display: inline-block;
+  float: right;
   background-color: #1c5380;
+  margin-top: 20px;
+}
+
+#logIn {
+  color: white;
+  display: inline-block;
+  float: right;
+  margin-top: -30px;
+  margin-right: 10px;
+}
+
+#house {
+  display: inline-block;
+  float: left;
+  margin-top: 6.5px;
+  margin-left: 5px;
 }
 
 #instagramLogo {
-
+clear: both;
+float: left;
 }
 
 footer {
@@ -96,6 +116,7 @@ footer {
 }
 
 #copyright {
-  padding: 0 5px;
-  color: rgb
+  padding:;
+  display: inline-block;
+  color: lightgray;
 }
