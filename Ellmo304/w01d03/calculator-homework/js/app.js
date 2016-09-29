@@ -4,7 +4,6 @@ do {
   var userRequest = prompt("Hello, welcome to the Calculator. What would you like to do today? Enter 'b' for basic sum, 'a' for advanced sum, 'm' for mortgage calculation or 'i' for bmi calculation!");
 
 
-
   switch(true) {
     case(userRequest === "b") : var basicCalculator = prompt("Please choose an operation. Enter 'a' for addition, 's' for subtraction, 'm' for multiply or 'd' for division!")
     break;
@@ -41,4 +40,6 @@ do {
     break;
   }
 
-} while (userRequest === true);
+}
+
+while (true);
