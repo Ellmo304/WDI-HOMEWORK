@@ -1,10 +1,10 @@
-
-var user1 = "x";
-var user2 = "o";
+//variables creating gameclick counter and tiles array(so i could apply event listener)
 
 var gameClicks = 0;
 
 var tiles = document.getElementsByClassName("tile");
+
+//variables setting each tile to a js element
 
 var tile1 = document.getElementById("tile1");
 var tile2 = document.getElementById("tile2");
@@ -18,7 +18,9 @@ var tile9 = document.getElementById("tile9");
 
 
 
-//
+//function which changes tiles when clicked to x or o depending on users turn - odd/even.
+//checks for win and draw conditions
+
 function markTile() {
   gameClicks++;
   if (gameClicks % 2 === 0 ) this.innerHTML = ("X");
@@ -38,10 +40,10 @@ function markTile() {
   else if (gameClicks === 9) {
     alert("The game is a draw!!!");
   }
+
 }
 
-while (this.innerHTML === "X" || this.innerHTML === "O") {
-  this.removeEventListener('click');}
+// loop listening for clicks to run marktile function
 
 for(var i = 0 ; i < tiles.length ; i++ ) {
 
@@ -50,6 +52,10 @@ for(var i = 0 ; i < tiles.length ; i++ ) {
 }
 
 
+
+
+//var setting reset button to js element and function to reset the game
+
 var clickReset = document.getElementById("resetButton").addEventListener("click", resetGame);
 
 function resetGame() {
@@ -57,4 +63,6 @@ function resetGame() {
   tile1.innerHTML = (""); tile2.innerHTML = (""); tile3.innerHTML = (""); tile4.innerHTML = (""); tile5.innerHTML = (""); tile6.innerHTML = (""); tile7.innerHTML = (""); tile8.innerHTML = ("");
   tile9.innerHTML = ("");
   gameClicks = 0;
+for (i = 0; i < tiles.length; i++) {
+tiles[i].disabled = false;}
 }
