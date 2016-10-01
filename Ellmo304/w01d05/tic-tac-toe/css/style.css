@@ -2,14 +2,19 @@
   width: 650px;
   height: 650px;
   background-color: orange;
-  margin: -115px auto;
+  margin: -145px auto;
   display: block;
   border: 2px solid black;
+  position: relative;
+  overflow: auto;
 }
 
-
-
-
+#resetButton {
+  background-color: red;
+  border-radius: 5px;
+  border: 2px solid black;
+  color: black;
+}
 
 .tile {
   height: 200px;
@@ -18,6 +23,7 @@
   border: 2px solid black;
   display: inline-block;
   margin: 5px ;
+  overflow: auto;
 }
 
 h1, h3 {

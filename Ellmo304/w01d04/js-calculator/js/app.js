@@ -30,5 +30,5 @@ function collectInputs() {
 var clearCalculator = document.getElementById("clear").addEventListener("click", clearDisplay);
 
 function clearDisplay() {
-  document.getElementById("output").innerHTML = ("");
+  alert("game reset");
 }

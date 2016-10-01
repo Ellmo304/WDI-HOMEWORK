@@ -17,6 +17,7 @@ var tile8 = document.getElementById("tile8");
 var tile9 = document.getElementById("tile9");
 
 
+
 //
 function markTile() {
   gameClicks++;
@@ -39,9 +40,21 @@ function markTile() {
   }
 }
 
+while (this.innerHTML === "X" || this.innerHTML === "O") {
+  this.removeEventListener('click');}
 
 for(var i = 0 ; i < tiles.length ; i++ ) {
 
   tiles[i].addEventListener('click', markTile);
 
+}
+
+
+var clickReset = document.getElementById("resetButton").addEventListener("click", resetGame);
+
+function resetGame() {
+  alert("game reset");
+  tile1.innerHTML = (""); tile2.innerHTML = (""); tile3.innerHTML = (""); tile4.innerHTML = (""); tile5.innerHTML = (""); tile6.innerHTML = (""); tile7.innerHTML = (""); tile8.innerHTML = ("");
+  tile9.innerHTML = ("");
+  gameClicks = 0;
 }
