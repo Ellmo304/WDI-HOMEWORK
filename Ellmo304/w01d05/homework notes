@@ -1,0 +1,28 @@
+Turn based
+board
+9 tiles
+2 players
+
+
+setup:
+boom
+link files together
+lay out board/css
+
+
+create clickevents on elements. insert values/textcontent/innerhtml to x or o when clicked
+could console log to check working
+
+
+look after clicks for win condition
+
+
+win condition:
+a player wins IF
+         one players counter is in every tile in a row, column or diagonal
+
+draw condition:
+ a draw IF
+        no player has won but all tiles picked/filled
+
+      if had click listener  once 9 clicks, game is over?

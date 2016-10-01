@@ -1,0 +1,26 @@
+#board {
+  width: 650px;
+  height: 650px;
+  background-color: orange;
+  margin: -115px auto;
+  display: block;
+  border: 2px solid black;
+}
+
+
+
+
+
+.tile {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  border: 2px solid black;
+  display: inline-block;
+  margin: 5px ;
+}
+
+h1, h3 {
+display: inline;
+margin: 0;
+}
