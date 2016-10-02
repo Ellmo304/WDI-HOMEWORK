@@ -4,19 +4,6 @@ var gameClicks = 0;
 
 var tiles = document.getElementsByClassName("tile");
 
-//variables setting each tile to a js element
-
-var tile1 = document.getElementById("tile1");
-var tile2 = document.getElementById("tile2");
-var tile3 = document.getElementById("tile3");
-var tile4 = document.getElementById("tile4");
-var tile5 = document.getElementById("tile5");
-var tile6 = document.getElementById("tile6");
-var tile7 = document.getElementById("tile7");
-var tile8 = document.getElementById("tile8");
-var tile9 = document.getElementById("tile9");
-
-
 
 //function which changes tiles when clicked to x or o depending on users turn - odd/even.
 //checks for win and draw conditions
@@ -51,10 +38,7 @@ for(var i = 0 ; i < tiles.length ; i++ ) {
 
 }
 
-
-
-
-//var setting reset button to js element and function to reset the game
+//var setting reset button to js element and function to reset the game, make tiles clickable again
 
 var clickReset = document.getElementById("resetButton").addEventListener("click", resetGame);
 
