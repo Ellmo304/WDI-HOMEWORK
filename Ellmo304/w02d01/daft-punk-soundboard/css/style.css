@@ -1,0 +1,51 @@
+body {
+  background-color: black;
+}
+
+div {
+  width: 860px;
+  margin: 0 auto;
+}
+
+button {
+  width: 200px;
+  height: 100px;
+  background-color: black;
+  text-align: center;
+  display: inline-block;
+  border: 5px solid white;
+  border-radius: 15px;
+  font-family: "Daft Punk";
+  margin: 5px;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Daft Punk";
+  src: url("../fonts/Daft Font.TTF");
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin-left: 280px;
+  margin-right: 280px;
+}
+
+.red {
+  color: red;
+}
+
+.white {
+  color: white;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.magenta {
+  color: magenta;
+}
