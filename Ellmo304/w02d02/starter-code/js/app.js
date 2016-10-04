@@ -1,25 +1,20 @@
 var userScore = 0;
-
 var aiScore = 0;
-
-
+var randomIndex = Math.floor(Math.random() * 3);
 var choices = ["rock", "paper", "scissors"];
+var computerChoice = choices[randomIndex];
+
 
 document.getElementById("player").innerHTML = "Click either rock, paper or scissors to play!";
 
-  var randomIndex = Math.floor(Math.random() * 3);
-  var choices = ["rock", "paper", "scissors"];
-
-  var computerChoice = choices[randomIndex];
-
-
-
-console.log(computerChoice);
 
 var playAgain = function() {
 document.getElementById("player").innerHTML = "Choose again to keep going!";
 randomIndex = Math.floor(Math.random() * 3);
 computerChoice = choices[randomIndex];
+document.getElementById("rock").disabled = false;
+document.getElementById("paper").disabled = false;
+document.getElementById("scissors").disabled = false;
 console.log(computerChoice);
 };
 
@@ -55,8 +50,9 @@ var playGame = function() {
   }
   document.getElementById("humanScore").innerHTML = (userScore);
   document.getElementById("computerScore").innerHTML = (aiScore);
-  setTimeout(playAgain, 5000);
+  setTimeout(playAgain, 2000);
 };
+
 
 
 document.getElementById("humanScore").innerHTML = (userScore);
@@ -65,3 +61,10 @@ document.getElementById("computerScore").innerHTML = (aiScore);
 document.getElementById("rock").addEventListener("click", playGame);
 document.getElementById("paper").addEventListener("click", playGame);
 document.getElementById("scissors").addEventListener("click", playGame);
+
+
+clickLock = function() {
+document.getElementById("rock").disabled = true;
+document.getElementById("paper").disabled = true;
+document.getElementById("scissors").disabled = true;
+};
