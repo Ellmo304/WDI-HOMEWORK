@@ -1,3 +1,5 @@
+var rockPaperScissors = rockPaperScissors || {};
+
 var userScore = 0;
 var aiScore = 0;
 var randomIndex = Math.floor(Math.random() * 3);
