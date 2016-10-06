@@ -49,9 +49,7 @@ $(this).val(
               <span>&rlm;</span>\
               <span>@</span><b>pamela</b>\
               &nbsp;&middot;&nbsp;\
-              <small class="time">\
-                ' + tweets.created_at + '\
-              </small>\
+              <small class="time">2016-10-05 21:32:31 +0000</small>\
               <p> ' + ($("#new-tweet-input").val()) + '</p>\
             </div>\
           </div>\
