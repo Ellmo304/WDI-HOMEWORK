@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)file:///Users/Elliot/Development/WDI-LONDON-PROJECT1/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="./Game_files/reset.css" media="screen" title="no title">
+  <link rel="stylesheet" href="./Game_files/style.css" media="screen" title="no title">
+  
+  <title>Game</title>
+</head>
+<body>
+
+  <div id="wrapper">
+
+    <h1>PLAYER 1</h1>   <h1>CPU</h1>
+
+    <div id="battleLog2">ACFCR placed, position your next ship!</div>
+
+
+
+    <div id="battleLog">
+      CPU READY
+    </div>
+
+
+    <div class="board">
+
+      <table id="playerBoard" class="">
+        <tbody>
+          <tr>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+          </tr>
+          <tr>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+          </tr>
+          <tr>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+          </tr>
+          <tr>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+          </tr>
+          <tr>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+          </tr>
+          <tr>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+          </tr>
+          <tr>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+          </tr>
+          <tr>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+          </tr>
+          <tr>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+          </tr>
+          <tr>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+
+
+
+
+    <div class="board">
+      <table id="cpuBoard">
+        <tbody>
+          <tr>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea hit"></td>
+          </tr>
+          <tr>
+            <td class="sea hit"></td>
+            <td class="sea hit"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+          </tr>
+          <tr>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea hit"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+          </tr>
+          <tr>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea hit"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea hit"></td>
+            <td class="sea"></td>
+            <td class="sea hit"></td>
+          </tr>
+          <tr>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea hit"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea hit"></td>
+            <td class="sea"></td>
+            <td class="sea hit"></td>
+          </tr>
+          <tr>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea hit"></td>
+            <td class="sea"></td>
+            <td class="sea hit"></td>
+          </tr>
+          <tr>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea hit"></td>
+            <td class="sea"></td>
+            <td class="sea hit"></td>
+          </tr>
+          <tr>
+            <td class="sea hit"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea hit"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+          </tr>
+          <tr>
+            <td class="sea hit"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+          </tr>
+          <tr>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+            <td class="sea"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+    <button class="ship-selector" id="ACFCR" disabled="">Aircraft Carrier</button>
+    <button class="ship-selector" id="BTSP">Battleship</button>
+    <button class="ship-selector" id="CRS">Cruiser</button>
+    <button class="ship-selector" id="CR2" disabled="">Cruiser2</button>
+    <button class="ship-selector" id="DS" disabled="">Destroyer</button>
+    <button style="margin-left: 100px;" id="rotateButton">Rotate ship</button>
+    <button disabled="true" id="playButton" type="button" name="button">START GAME</button>
+
+  </div>
+
+  <script src="./Game_files/jquery.min.js"></script>
+  <script type="text/javascript" src="./Game_files/app.js"></script>
+
+
+
+</body></html>
