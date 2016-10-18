@@ -13,7 +13,6 @@ form.delete {
 h1 {
   margin: 40px;
   text-align: center;
-  color: black;
 }
 
 nav {
@@ -30,18 +29,10 @@ nav>ul>li>a {
 }
 
 .list-group-item > a, h3 {
-  /*color: rgba(50, 0, 180, 1);*/
-  color: white;
+  color: rgba(50, 0, 180, 1);
   font-size: 27px;
-  padding-top: 10px;
 }
 
 .list-group-item > p, h5 {
   color: black;
-}
-
-.list-group-item {
-  background-color: rgba(130, 0, 160, 0.5);
-  border: 2px solid white;
-  border-radius: 10px;
 }

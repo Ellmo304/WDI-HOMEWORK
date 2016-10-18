@@ -1,5 +1,5 @@
 let quotes = require("../data/quotes");
-let id = 5;
+let id = 9;
 //index
 const quotesIndex = (req, res) => {
   res.render('quotes/index', { quotes });
@@ -44,7 +44,7 @@ const quotesUpdate = (req, res) => {
   quote.id = parseInt(req.params.id);
   quotes[index] = quote;
 
-  res.redirect(301, `/quotes/${quote.id}`);
+  res.redirect(301, "/quotes/");
 };
 
 //delete

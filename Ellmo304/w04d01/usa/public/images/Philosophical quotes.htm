@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://localhost:8000/quotes/new -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <link rel="stylesheet" href="./Philosophical quotes_files/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+  <link rel="stylesheet" href="./Philosophical quotes_files/style.css" media="screen" title="no title">
+
+  <title>Philosophical quotes</title>
+</head>
+<body data-pinterest-extension-installed="cr1.40">
+  <nav class="navbar">
+    <a class="navbar-brand" href="http://localhost:8000/">PhilosophicalQuotes.com</a>
+    <ul class="nav navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="http://localhost:8000/">Quotes Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://localhost:8000/quotes/new">Add a Quote</a>
+      </li>
+    </ul>
+</nav>
+
+  <div class="container">
+  
+    <h1>Add a new quote!</h1>
+
+<form action="http://localhost:8000/quotes" method="post">
+  <div class="form-group">
+  <label for="quote_quote">Quote</label>
+  <input type="text" name="quote[quote]" id="quote_quote" class="form-control">
+</div>
+
+<div class="form-group">
+  <label for="quote_author">Who said it?</label>
+  <input type="text" name="quote[author]" id="quote_author" class="form-control">
+</div>
+
+<div class="form-group">
+  <label for="quote_year">Year it was said</label>
+  <input type="text" name="quote[year]" id="quote_year" class="form-control">
+</div>
+
+<button class="btn btn-primary">Create</button>
+</form>
+
+  </div>
+  <script src="./Philosophical quotes_files/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+  <script src="./Philosophical quotes_files/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+  <script src="./Philosophical quotes_files/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+
+
+</body></html>

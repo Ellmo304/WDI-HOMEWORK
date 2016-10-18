@@ -1,13 +1,13 @@
-<h1>All Quotes</h1>
+<h1>Philosophical Quotes</h1>
 
 <ul class="list-group">
- <% locals.quotes.forEach((quote) => { %>
-  <li class="list-group-item">
+  <% locals.quotes.forEach((quote) => { %>
+    <li class="list-group-item">
     <a href="/quotes/<%= quote.id %>"><h3><%= quote.quote %></h3></a>
-    <p>
-      <%= quote.author %><br>
-      <%= quote.year %>
+    <h5><%= quote.author %></h5>
+
+    <p><%= quote.year %>
     </p>
-  </li>
- <% }) %>
+    </li>
+  <% }) %>
 </ul>
