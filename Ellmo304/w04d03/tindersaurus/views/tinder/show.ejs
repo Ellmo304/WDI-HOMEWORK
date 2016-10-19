@@ -1,1 +1,21 @@
-<h1>SHOW</h1>
+<h1>VIEW PROFILE</h1>
+
+<h2><%= profile.name %></h2>
+<h2><%= profile.age %></h2>
+<img src="<%= profile.image %>"/>
+<h2><%= profile.gender %></h2>
+<h3><%= profile.species %></h3>
+<h3><%= profile.hasChildren %></h3>
+<h3><%= profile.bodyShape %></h3>
+
+<a href="/tinder/index/<%= profile.id %>/edit">Edit</a>
+<form action="/tinder/<%= profile.id %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <button>Delete</button>
+</form>
+
+<%# 
+<% if (profile.hasChildren === true) {
+  %><h3>"Has children"</h3><%
+  else { <h3>"No children"</h3>
+} %>%>

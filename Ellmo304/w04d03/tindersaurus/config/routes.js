@@ -22,6 +22,6 @@ router.route("/tinder/:id")
   .delete(tindersaurusController.delete);
 
   //edit
-  router.get("/tinder/:id/edit", tindersaurusController.edit);
+  router.get("/tinder/index/:id/edit", tindersaurusController.edit);
 
   module.exports = router;

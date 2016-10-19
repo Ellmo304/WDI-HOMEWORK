@@ -14,7 +14,7 @@ function tindersaurusNew(req, res){
 function tindersaurusCreate(req, res) {
   Profile.create(req.body.profile, (err, profile) => {
     if(err) return res.status(500).send("500: Server Error");
-    res.redirect(301, '/tinder');
+    res.redirect(301, '/tinder/index');
   });
 }
 
@@ -35,14 +35,14 @@ function tindersaurusEdit(req, res) {
 function tindersaurusUpdate(req, res) {
   Profile.findByIdAndUpdate(req.params.id, req.body.profile, (err, profile) => {
     if(err) return res.status(500).send("500: Server Error");
-    res.redirect(301, "/tinder");
+    res.redirect(301, "/tinder/index");
   });
 }
 
 function tindersaurusDelete(req, res) {
   Profile.findByIdAndRemove(req.params.id, (err) => {
     if(err) return res.status(500).send("500: Server Error");
-    res.redirect(301, '/tinder');
+    res.redirect(301, '/tinder/index');
   });
 }
 

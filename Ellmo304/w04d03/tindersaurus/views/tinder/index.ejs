@@ -1,13 +1,17 @@
-<h1>Profiles</h1>
+<h1>TINDERSAURUS PROFILES</h1>
 
 
 
 
 <% profiles.forEach((profile) => { %>
-  <h2><a href="/tinder/<%= profile.id %>"><%= profile.name %></a></h2>
+  <a href="/tinder/<%= profile.id %>">
+  <div class="profile-div">
+  <h2><%= profile.name %></h2>
   <h3><%= profile.age %></h3>
   <img src="<%= profile.image %>"/>
-  <h3><%= profile.species %></h3>
-  <h3><%= profile.hasChildren %></h3>
-  <h3><%= profile.bodyShape %></h3>
+  <h6><%= profile.gender %></h6>
+  <h6><%= profile.species %></h6>
+  <h6><%= profile.hasChildren %></h6>
+  <h6><%= profile.bodyShape %></h6></a>
+  </div>
 <% }) %>

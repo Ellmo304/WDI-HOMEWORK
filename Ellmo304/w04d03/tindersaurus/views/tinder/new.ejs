@@ -1,1 +1,27 @@
-<h1>NEW</h1>
+<h1>CREATE PROFILE</h1>
+
+<form action="/tinder/index" method="post">
+
+  <label for="profile_name">Name</label>
+  <input type="text" name="profile[name]" id="profile_name">
+
+  <label for="profile_age">Age</label>
+  <input type="text" name="profile[age]" id="profile_age">
+
+  <label for="profile_image">URL to profile image goes here</label>
+  <input type="text" name="profile[image]" id="profile_image">
+
+  <label for="profile_gender">Gender</label>
+  <input type="text" name="profile[gender]" id="profile_gender">
+
+  <label for="profile_species">Species</label>
+  <input type="text" name="profile[species]" id="profile_species">
+
+  <label for="profile_hasChildren">Do you have children? Please answer true or false</label>
+  <input type="text" name="profile[hasChildren]" id="profile_hasChildren">
+
+  <label for="profile_bodyShape">What is your body shape?</label>
+  <input type="text" name="profile[bodyShape]" id="profile_bodyShape">
+
+  <button> Submit your profile</button>
+</form>

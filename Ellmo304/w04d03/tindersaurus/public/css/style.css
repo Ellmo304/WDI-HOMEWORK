@@ -1,0 +1,36 @@
+form, input {
+  display: block;
+}
+
+.navbar {
+  background-color: pink;
+  color: black;
+}
+
+.nav-link {
+  color: #331a00;
+}
+
+body {background-color: white;}
+
+img {
+  height: 200px;
+  margin: 0 auto;
+  display: inline-block;
+  margin-left: 17.75px;
+}
+
+.profile-div {
+  background-color: blue;
+  width: 200px;
+  border: 3px solid navy;
+  border-radius: 15px;
+}
+
+.profile-div a, h3, img {
+  text-align: center;
+  color: white;
+  padding: 5px;
+}
+
+im
