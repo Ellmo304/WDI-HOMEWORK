@@ -45,6 +45,7 @@ button {
   color: white;
   margin-top: 10px;
   border: 2px solid #331100;
+  display: inline-block;
 }
 
 .profile-div {
@@ -60,4 +61,61 @@ button {
   text-align: center;
   color: white;
   padding: 5px;
+}
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+#viewProfile {
+  background-color: #ff4d6a;
+  text-align: left;
+  color: white;
+  border: 5px solid #331100;
+  border-radius: 15px;
+}
+#viewProfile > h1 {
+  text-align: center;
+  color: white;
+}
+
+#viewProfile > h2 {
+  margin-left: 80px;
+}
+
+#viewProfile > button {
+  margin-left: 80px;
+  display: inline-block;
+  background-color: white;
+  color: #331100;
+}
+
+#viewProfile > form {
+  margin-left: 10px;
+  display: inline-block;
+  background-color:
+}
+#viewProfile > form > button {
+  margin-left: 10px;
+  margin-top: 40px;
+  display: inline-block;
+  background-color: #331100;
+  color: white;
+}
+
+#viewProfile > img {
+  float: right;
+  height: 300px;
+  width: 256px;
+  margin-top: -80px;
+  margin-right: 50px;
+  margin-bottom: 100px;
+}
+
+#viewProfile > button >a {
+  color: #ff4d6a;
 }
