@@ -6,7 +6,7 @@ const profileSchema = mongoose.Schema({
   gender: String,
   species: String,
   image: String,
-  hasChildren: Boolean,
+  hasChildren: String,
   bodyShape: String
 });
 
