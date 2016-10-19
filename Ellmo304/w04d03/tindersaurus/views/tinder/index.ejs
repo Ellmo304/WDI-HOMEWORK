@@ -1,0 +1,13 @@
+<h1>Profiles</h1>
+
+
+
+
+<% profiles.forEach((profile) => { %>
+  <h2><a href="/tinder/<%= profile.id %>"><%= profile.name %></a></h2>
+  <h3><%= profile.age %></h3>
+  <img src="<%= profile.image %>"/>
+  <h3><%= profile.species %></h3>
+  <h3><%= profile.hasChildren %></h3>
+  <h3><%= profile.bodyShape %></h3>
+<% }) %>

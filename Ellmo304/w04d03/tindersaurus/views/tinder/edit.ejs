@@ -1,0 +1,26 @@
+<h1>EDIT PROFILE</h1>
+
+
+<form action="/tinder/<%= profile.id %>" method="post">
+  <input type="hidden" name="_method" value="put">
+
+  <label for="profile_name">Name</label>
+  <input type="text" name="profile[name]" id="profile_name" value="<%= profile.name %>">
+
+  <label for="profile_age">Age</label>
+  <input type="text" name="profile[age]" id="profile_age" value="<%= profile.age %>">
+
+  <label for="profile_image">URL to profile image goes here</label>
+  <input type="text" name="profile[image]" id="profile_image" value="<%= profile.image %>">
+
+  <label for="profile_species">Species</label>
+  <input type="text" name="profile[species]" id="profile_species" value="<%= profile.species %>">
+
+  <label for="profile_hasChildren">Do you have children? Please answer true or false</label>
+  <input type="text" name="profile[hasChildren]" id="profile_hasChildren" value="<%= profile.hasChildren %>">
+
+  <label for="profile_bodyShape">What is your body shape?</label>
+  <input type="text" name="profile[bodyShape]" id="profile_bodyShape" value="<%= profile.bodyShape %>">
+
+  <button>Update Profile</button>
+</form>
