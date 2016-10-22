@@ -5,7 +5,7 @@ $(function () {
   console.log("JS loaded!");
 
   var addGuitar = function addGuitar(guitar) {
-    $("#guitarCatalogue").prepend("<li><h5>" + guitar.Make + "</h5> <h6>" + guitar.Model + "</h6> <img src=\"" + guitar.Picture + "\"/></li>");
+    $("#guitarCatalogue").prepend("<li><h3>" + guitar.Make + "</h3> <h4>" + guitar.Model + "</h4> <img src=\"" + guitar.Picture + "\"/> <h5>Frets: " + guitar.Frets + "</h5> <h5>Colour: " + guitar.Colour + "</h5> <h5>Price: " + guitar.Price + "</h5></li>");
   };
 
   var getGuitars = function getGuitars() {
