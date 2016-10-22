@@ -25,7 +25,7 @@ function guitarsShow(req, res) {
 function guitarsUpdate(req, res) {
   Guitar.findByIdAndUpdate(req.params.id, req.body, {new: true}, (err, guitar) => {
     if(err)res.status(500).json({error: err});
-    res.status(201).guitar.json(guitar);
+    res.status(201).json(guitar);
   });
 }
 
