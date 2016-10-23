@@ -35,3 +35,18 @@ form {
 input {
   margin: 10px;
 }
+
+.post {
+  background-color: blue;
+  color: white;
+}
+
+.update {
+  background-color: green;
+  color: white;
+}
+
+.delete {
+  background-color: red;
+  color: white;
+}
