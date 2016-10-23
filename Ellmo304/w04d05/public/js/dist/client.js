@@ -21,4 +21,18 @@ $(function () {
   };
 
   getGuitars();
+
+  var createGuitar = function createGuitar(e) {
+    e.preventDefault();
+
+    $.ajax({
+      method: "POST",
+      url: "http://localhost:8000/guitars",
+      data: $("form").serialize()
+    }).done(function (data) {
+      addGuitar(data);
+    });
+  };
+
+  $("form").on("submit", createGuitar);
 });
