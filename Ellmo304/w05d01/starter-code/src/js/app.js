@@ -67,19 +67,21 @@ $(() => {
 
   document.getElementById("locationButton").addEventListener("click", function(){
     navigator.geolocation.getCurrentPosition((position) => {
-      let latLng = {
+      let personsPosition = {
         lat: position.coords.latitude,
         lng: position.coords.longitude
       };
-      googleMap.map.panTo(latLng);
-      googleMap.map.setZoom(14);
-      let marker = new google.maps.Marker({
-        position: latLng,
-        animation: google.maps.Animation.DROP,
-        draggable: true,
-        map: googleMap.map
-      });
+      people.push(personsPosition);
+      console.log(people);
+      addMarker(personsPosition);
+      setMapBounds(people);
     });
+    showFriendForm();
   });
 
-});
+
+
+
+
+
+  });
