@@ -1,0 +1,28 @@
+body {
+  background-color: #02baf6;
+}
+
+
+
+
+ul {
+
+  width: 600px;
+  margin: 0 auto;
+  padding: 0;
+
+}
+
+ul li {
+  border: 1px solid;
+  width: 194px;
+  height: 194px;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 194px;
+  font-weight: 800;
+  color: black;
+  text-align: center;
+  background-color: white;
+  font-size: 80px;
+}
