@@ -15,7 +15,7 @@
   <section ng-controller="CriminalsController as criminals">
     <ul id="criminals">
       <li ng-repeat="criminal in criminals.all">
-        <strong>{{ criminal.name }}</strong> <em>{{ criminal.location }}</em> <span class="status">{{ criminal.status }}</span>
+        <strong>{{ criminal.name }}</strong> <em>{{ criminal.location }}</em> <span class="status" ng-class="['{{ criminal.status }}']">{{ criminal.status }}</span>
         <button class="delete" ng-click="criminals.removeCriminal(criminal._id, $index)">X</button>
       </li>
     </ul>
