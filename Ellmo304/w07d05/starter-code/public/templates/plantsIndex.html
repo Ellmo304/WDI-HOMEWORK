@@ -1,0 +1,13 @@
+<section>
+<ul class="row">
+<li ng-repeat="plant in plantsIndex.all" class="four columns">
+<a ui-sref="plantsShow({ id: plant._id })">
+  <img ng-src="{{ plant.image }}" class="u-max-full-width">
+  <h2>{{ plant.species }}</h2>
+  <h4>{{ plant.variety }}</h4>
+  <h4>{{ plant.hardy }}</h4>
+
+</a>
+</li>
+</ul>
+</section>

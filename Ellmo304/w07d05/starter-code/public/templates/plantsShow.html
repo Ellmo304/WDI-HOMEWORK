@@ -1,0 +1,10 @@
+<section>
+  <img ng-src="{{ plantsShow.plant.image }}">
+  <h2>Species: {{ plantsShow.plant.species }}</h2>
+  <h4>Variety: {{ plantsShow.plant.variety }}</h4>
+  <h4>Hardy: {{ plantsShow.plant.hardy }}</h4>
+
+
+  <a ui-sref="plantsEdit({ id: plantsShow.plant._id })">Edit</a>
+  <a ng-click="plantsShow.plantsDelete({id: plantsShow.plant._id })">Delete</a>
+</section>
