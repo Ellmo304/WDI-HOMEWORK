@@ -1,4 +1,4 @@
-angular.module('plantsApp', ['ngResource', 'ui.router'])
+angular.module('plantsApp', ['ngMessages', 'ngResource', 'ui.router'])
   .config(Router);
 
 Router.$inject= ['$stateProvider', '$urlRouterProvider'];
