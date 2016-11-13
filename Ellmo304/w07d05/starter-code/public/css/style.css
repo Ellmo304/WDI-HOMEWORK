@@ -26,7 +26,7 @@ h1 {
 body {
   text-align: center;
   background-image: url("http://inspiredboy.com/uploads/201510/full/foliage-background-1-b8740a71143abc4a1c33bd1f1ec01690.jpg");
-  background-size: contain;
+  background-size: auto;
   font-family: 'Montserrat', sans-serif;
   color: black;
 
