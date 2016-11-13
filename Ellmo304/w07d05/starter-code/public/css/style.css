@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Oleo+Script');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
+
+header.container {
+  padding: 10px 75px 0px 75px;
+}
+
 a {
   color: darkblue;
 }
@@ -8,6 +13,7 @@ a {
 nav>ul>li {
   list-style-type: none;
   display: inline;
+  line-height: 40px;
 }
 
 h1 {
@@ -28,8 +34,9 @@ body {
 
 li>h4 {
   text-align: left;
-  font-size: 20px;
+  font-size: 30px;
   color: black;
+  font-family: 'Oleo Script', cursive;
 }
 
 
@@ -76,4 +83,9 @@ section>ul>li>a>img {
 .column, .columns {
   margin-left: 0px;
 }
+}
+
+div.twelve.columns>img {
+width: 534px;
+height: 467px;
 }
