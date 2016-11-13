@@ -1,3 +1,79 @@
-li {
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+a {
+  color: darkblue;
+}
+
+nav>ul>li {
   list-style-type: none;
+  display: inline;
+}
+
+h1 {
+  font-family: 'Oleo Script', cursive;
+  font-size: 60px;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+body {
+  text-align: center;
+  background-image: url("http://inspiredboy.com/uploads/201510/full/foliage-background-1-b8740a71143abc4a1c33bd1f1ec01690.jpg");
+  background-size: contain;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+
+}
+
+li>h4 {
+  text-align: left;
+  font-size: 20px;
+  color: black;
+}
+
+
+.nav {
+
+background-color: white;
+padding: 20px;
+color: darkblue;
+text-decoration: none;
+
+}
+
+a.nav:hover {
+  background-color: darkblue;
+  color: white;
+}
+
+nav{margin-top: -25px;}
+
+.container {
+  background-color: white;
+  padding: 10px 75px 50px 75px;
+  margin-top: -10px;
+}
+
+section>ul>li {
+  border: 1px solid darkblue;
+  /*border-radius: 5px;*/
+  padding: 20px;
+  height: 360px;
+  width: 140px;
+  display: inline-block;
+  margin:20px;
+}
+
+
+section>ul>li>a>img {
+  height: 115px;
+  /*border-radius: 5px;*/
+
+}
+
+@media (min-width: 550px) {
+.column, .columns {
+  margin-left: 0px;
+}
 }

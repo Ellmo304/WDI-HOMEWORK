@@ -1,0 +1,26 @@
+<section class="row">
+  <form ng-submit="plantsEdit.plantsUpdate()">
+    <div class="twelve columns">
+      <label>Species</label>
+      <input type="text" name="species" placeholder="Species" ng-model="plantsEdit.plant.species" class="u-full-width">
+    </div>
+    <div class="twelve columns">
+      <label>Variety</label>
+      <input type="text" name="variety" placeholder="Variety" ng-model="plantsEdit.plant.variety" class="u-full-width">
+    </div>
+    <div class="twelve columns">
+      <label>Hardy?</label>
+      <input type="text" name="hardy" placeholder="Please enter true or false" ng-model="plantsEdit.plant.hardy" class="u-full-width">
+    </div>
+    <div class="twelve columns">
+      <label>Price</label>
+      <input type="text" name="price" placeholder="eg. £10.99" ng-model="plantsEdit.plant.price" class="u-full-width">
+    </div>
+    <div class="twelve columns">
+      <label>Image</label>
+      <input type="text" name="image" placeholder="Image url" ng-model="plantsEdit.plant.image" class="u-full-width">
+    </div>
+
+    <button type="submit">Update</button>
+  </form>
+</section>
