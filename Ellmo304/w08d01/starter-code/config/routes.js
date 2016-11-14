@@ -3,13 +3,13 @@ const router = require('express').Router();
 const plantsController = require('../controllers/plants');
 const authController = require('../controllers/auth');
 const secureRoute = require('../lib/secureRoute');
-// const oauthController = require('../controllers/oauth');
+const oauthController = require('../controllers/oauth');
 
 
 router
   .post('/login', authController.login)
-  .post('/register', authController.register);
-  // .post('/auth/github', oauthController.github);
+  .post('/register', authController.register)
+  .post('/auth/facebook', oauthController.facebook);
 
 
 router.route('/plants')

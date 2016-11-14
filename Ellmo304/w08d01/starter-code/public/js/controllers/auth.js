@@ -35,6 +35,7 @@ function LoginController($auth, $state) {
     $auth.authenticate(provider)
     .then((res) => {
       console.log(res);
+      $state.go('plantsIndex');
     });
   }
   login.authenticate = authenticate;
