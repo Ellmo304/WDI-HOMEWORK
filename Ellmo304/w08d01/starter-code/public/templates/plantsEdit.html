@@ -1,0 +1,53 @@
+<section class="row">
+  <form name="plantsEdit.form" ng-submit="plantsEdit.plantsUpdate()" novalidate>
+    <div class="twelve columns">
+      <label>Species</label>
+      <input type="text" name="species" placeholder="Species" ng-model="plantsEdit.plant.species" class="u-full-width" required minlength="3">
+      <div ng-messages="plantsEdit.form.species.$error" ng-show="plantsEdit.form.species.$dirty">
+        <div ng-message="required">Species is required!</div>
+        <div ng-message="minlength">Species must have at least three characters!</div>
+      </div>
+    </div>
+    <div class="twelve columns">
+      <label>Variety</label>
+      <input type="text" name="variety" placeholder="Variety" ng-model="plantsEdit.plant.variety" class="u-full-width" required minlength="3">
+      <div ng-messages="plantsEdit.form.variety.$error" ng-show="plantsEdit.form.variety.$dirty">
+        <div ng-message="required">Variety is required!</div>
+        <div ng-message="minlength">Variety must have at least three characters!</div>
+      </div>
+    </div>
+    <div class="twelve columns">
+      <label>Hardy?</label>
+      <input type="text" name="hardy" placeholder="Please enter true or false" ng-model="plantsEdit.plant.hardy" class="u-full-width" required>
+    </div>
+    <div ng-messages="plantsEdit.form.hardy.$error" ng-show="plantsEdit.form.hardy.$dirty">
+      <div ng-message="required">Please enter true or false!</div>
+    </div>
+    <div class="twelve columns">
+      <label>Price</label>
+      <input type="text" name="price" placeholder="eg. £10.99" ng-model="plantsEdit.plant.price" class="u-full-width" required>
+      <div ng-messages="plantsEdit.form.price.$error" ng-show="plantsEdit.form.price.$dirty">
+        <div ng-message="required">Price is required!</div>
+      </div>
+    </div>
+    <div class="twelve columns">
+      <label>Image</label>
+      <input type="text" name="image" placeholder="Image url" ng-model="plantsEdit.plant.image" class="u-full-width">
+    </div>
+
+    <button type="submit">Update</button>
+  </form>
+</section>
+
+
+<!-- <form name="criminals.form" id="newCriminal" ng-submit="criminals.addCriminal()" novalidate> -->
+
+<!--
+<div>
+    <label for="newCriminal-location">Location:</label>
+    <input type="text" id="newCriminal-location" name="location" ng-model="criminals.newCriminal.location" placeholder="Reichenbach Falls, CH" required minlength="2">
+    <div ng-messages="criminals.form.location.$error" ng-show="criminals.form.location.$dirty">
+      <div ng-message="required">Location is required!</div>
+      <div ng-message="minlength">Location must have at least two characters!</div>
+    </div>
+  </div> -->

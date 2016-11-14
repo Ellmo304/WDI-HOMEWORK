@@ -1,0 +1,14 @@
+<section class="row">
+  <div class="twelve columns">
+  <img class="u-max-full-width" ng-src="{{ plantsShow.plant.image }}">
+  <h2>Species: {{ plantsShow.plant.species }}</h2>
+  <h4>Variety: {{ plantsShow.plant.variety }}</h4>
+  <h4 ng-show="plantsShow.plant.hardy === true">Hardiness: Hardy</h4>
+  <h4 ng-show="plantsShow.plant.hardy === false">Hardiness: Tender</h4>
+  <h4>Price: {{ plantsShow.plant.price }}</h4>
+
+
+  <a ng-if="plantsShow.isLoggedIn()" ui-sref="plantsEdit({ id: plantsShow.plant._id })">Edit</a>
+  <a ng-if="plantsShow.isLoggedIn()" ng-click="plantsShow.plantsDelete({id: plantsShow.plant._id })">Delete</a>
+  <div>
+</section>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="plantsApp">
+<head>
+  <meta charset="utf-8">
+  <title>Angular Gardens</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-resource.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-messages.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/satellizer/0.15.5/satellizer.min.js"></script>
+  <script src="/js/app.js" charset="utf-8"></script>
+  <script src="/js/controllers/plants.js" charset="utf-8"></script>
+  <script src="/js/controllers/auth.js" charset="utf-8"></script>
+  <script src="/js/controllers/main.js" charset="utf-8"></script>
+  <script src="/js/models/plant.js" charset="utf-8"></script>
+
+</head>
+<body ng-controller="MainController as main">
+
+
+  <header class="container">
+    <nav class="row">
+      <ul>
+        <li><h4 class="five columns nav">Angular Gardens</h4></li>
+        <li><a class="three columns nav" ui-sref="plantsIndex" ui-sref-active="active">All Plants</a></li>
+        <li ng-if="main.isLoggedIn()"><a class="three columns nav" ui-sref="plantsNew" ui-sref-active="active">Add a plant</a></li>
+        <li ng-if="!main.isLoggedIn()"><a class="three columns nav" ui-sref="register" ui-sref-active="active">Register</a></li>
+        <li ng-if="!main.isLoggedIn()"><a class="two columns nav" ui-sref="login" ui-sref-active="active">Login</a></li>
+        <li ng-if="main.isLoggedIn()"><a class="one column nav" ng-click="main.logout()">Logout</a></li>
+      </ul>
+    </nav>
+
+    <h1>Angular Gardens</h1>
+    <hr>
+
+    <p ng-if="main.message">{{ main.message }}</p>
+
+  </header>
+  <main class="container" ui-view>
+
+  </main>
+
+</body>
+</html>

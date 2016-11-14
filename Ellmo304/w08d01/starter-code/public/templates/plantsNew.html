@@ -1,0 +1,39 @@
+<section class="row">
+  <form name="plantsNew.form" ng-submit="plantsNew.plantsCreate()" novalidate>
+    <div class="twelve columns">
+      <label>Species</label>
+      <input type="text" name="species" placeholder="Species" ng-model="plantsNew.plant.species" class="u-full-width" required minlength="3">
+      <div ng-messages="plantsNew.form.species.$error" ng-show="plantsNew.form.species.$dirty">
+        <div ng-message="required">Species is required!</div>
+        <div ng-message="minlength">Species must have at least three characters!</div>
+      </div>
+    </div>
+    <div class="twelve columns">
+      <label>Variety</label>
+      <input type="text" name="variety" placeholder="Variety" ng-model="plantsNew.plant.variety" class="u-full-width" required minlength="3">
+      <div ng-messages="plantsNew.form.variety.$error" ng-show="plantsNew.form.variety.$dirty">
+        <div ng-message="required">Variety is required!</div>
+        <div ng-message="minlength">Variety must have at least three characters!</div>
+      </div>
+    </div>
+    <div class="twelve columns">
+      <label>Hardy</label>
+      <input type="text" name="hardy" placeholder="Please enter true or false" ng-model="plantsNew.plant.hardy" class="u-full-width" required>
+    <div ng-messages="plantsNew.form.hardy.$error" ng-show="plantsNew.form.hardy.$dirty">
+      <div ng-message="required">Please enter true or false!</div>
+    </div>
+    </div>
+    <div class="twelve columns">
+      <label>Price</label>
+      <input type="text" name="price" placeholder="eg. £10.99" ng-model="plantsNew.plant.price" class="u-full-width" required>
+      <div ng-messages="plantsNew.form.price.$error" ng-show="plantsNew.form.price.$dirty">
+        <div ng-message="required">Price is required!</div>
+    </div>
+    <div class="twelve columns">
+      <label>Image</label>
+      <input type="text" name="image" placeholder="Image url" ng-model="plantsNew.plant.image" class="u-full-width">
+    </div>
+
+    <button>Add plant</button>
+  </form>
+</section>
