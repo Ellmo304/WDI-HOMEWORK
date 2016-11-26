@@ -2,7 +2,7 @@ require_relative "shelter"
 require_relative "animal"
 require_relative "client"
 
-@shelter = Shelter.new("Dogs r us", 100)
+@shelter = Shelter.new("Pets r us", 100)
 
 elliot = Client.new("Elliot", "Brock")
 frank = Animal.new("Frank", "cat", "male")
