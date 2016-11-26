@@ -24,7 +24,13 @@ pedro.add_toy("rubber fish")
 
 def menu
   puts `clear`
-  puts "*** Welcome to #{@shelter.name} ***\n\n"
+  # puts "*** Welcome to #{@shelter.name} ***\n\n"
+  puts "
+ _____     _          _____ _       _ _
+|  _  |___| |_ ___   |   __| |_ ___| | |_ ___ ___
+|   __| -_|  _|_ -|  |__   |   | -_| |  _| -_|  _|
+|__|  |___|_| |___|  |_____|_|_|___|_|_| |___|_|
+                                                  \n\n"
   puts "1 : List all animals in this shelter"
   puts "2 : List all clients"
   puts "3 : Adopt an animal"
