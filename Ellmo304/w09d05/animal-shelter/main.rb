@@ -2,7 +2,7 @@ require_relative "shelter"
 require_relative "animal"
 require_relative "client"
 
-@shelter = Shelter.new("Pets r us", 100)
+@shelter = Shelter.new("Pets r us", 2)
 
 elliot = Client.new("Elliot", "Brock")
 frank = Animal.new("Frank", "cat", "male")
@@ -16,6 +16,10 @@ max = Animal.new("Max", "dog", "male")
 max.add_toy("chewy bone")
 max.add_toy("ball")
 @shelter.add_animal(max)
+pedro = Animal.new("Pedro", "penguin", "male")
+pedro.add_toy("rubber fish")
+@shelter.add_animal(pedro)
+
 
 
 def menu
@@ -56,8 +60,11 @@ def list_clients_pets(shelter, client)
 end
 
 def surrender_animal(shelter, client, pet)
+  if shelter.capacity != shelter.animals.length
   shelter.animals << shelter.clients[client].pets[pet]
   shelter.clients[client].pets.delete_at(pet)
+else puts "Sorry, the shelter is full at this time"
+  end
 end
 
 

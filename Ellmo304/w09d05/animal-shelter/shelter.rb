@@ -1,9 +1,6 @@
 class Shelter
   attr_reader :name
-  attr_accessor :animals
-  attr_accessor :clients
-  attr_reader :capacity
-
+  attr_accessor :animals, :clients, :capacity
   def initialize(name, capacity)
     @name = name
     @animals = []
@@ -13,6 +10,7 @@ class Shelter
 
   def add_animal(animal)
     @animals << animal
+
   end
 
   def add_client(client)
