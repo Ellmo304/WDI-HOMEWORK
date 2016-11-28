@@ -2,9 +2,9 @@
 
 
 body {
-  background-color: pink;
-  font-family: Helvetica, sans-serif;
+  /*background-color: pink;*/
   background-image: url("http://cdn.pcwallart.com/images/gradient-wallpaper-2.jpg");
+  font-family: Helvetica, sans-serif;
 }
 
 #form {
