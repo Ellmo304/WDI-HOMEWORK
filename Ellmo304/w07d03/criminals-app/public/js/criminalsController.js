@@ -1,43 +1,43 @@
-angular.module('criminalsApp')
-  .controller('CriminalsController', CriminalsController);
+angular.module('foodApp')
+  .controller('FoodsController', FoodsController);
 
 
-CriminalsController.$inject = ['$http'];
-function CriminalsController($http) {
-  const criminals = this;
-  criminals.all = [];
-  criminals.addCriminal = addCriminal;
-  criminals.removeCriminal = removeCriminal;
-  criminals.newCriminal = {};
+FoodsController.$inject = ['Food', '$state', '$auth'];
+function FoodsController(Food, $state, $auth) {
+  const foods = this;
+  foods.all = Food.query();
+  foods.addFood = addFood;
+  foods.removeFood = removeFood;
+  foods.newFood = {};
 
 
 
-  function getCriminals() {
-    $http.get('/criminals')
+  function getFoods() {
+    $http.get('/foods')
     .then((res) => {
-      criminals.all = res.data;
+      foods.all = res.data;
     });
   }
 
 
-  function addCriminal() {
-    $http.post('/criminals', criminals.newCriminal)
+  function addFood() {
+    $http.post('/foods', foods.newFood)
     .then((res) => {
-      criminals.all.push(res.data);
-      criminals.newCriminal = {};
+      foods.all.push(res.data);
+      foods.newFood = {};
     })
     .catch(() => {
       console.log('Something went wrong!');
     });
   }
 
-  function removeCriminal(criminalId, $index) {
-    $http.delete(`/criminals/${criminalId}`)
+  function removeFood(foodId, $index) {
+    $http.delete(`/foods/${foodId}`)
       .then(() => {
-        criminals.all.splice($index, 1);
+        foods.all.splice($index, 1);
       });
   }
 
 
-  getCriminals();
+  getFoods();
 }
