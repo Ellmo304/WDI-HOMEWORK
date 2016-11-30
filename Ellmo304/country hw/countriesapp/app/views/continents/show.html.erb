@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @continent.name %>
+</p>
+
+<p>
+  <strong>Countries:</strong>
+  <ul>
+    <% @continent.countries.each do |country| %>
+    <a href="/countries/<%=country.id%>"><li><%=country.name%></li></a>
+    <% end %>
+  </ul>
+</p>
+
+<%= link_to 'Edit', edit_continent_path(@continent) %> |
+<%= link_to 'Back', continents_path %>
