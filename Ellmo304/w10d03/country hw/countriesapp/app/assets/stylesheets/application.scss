@@ -1,0 +1,73 @@
+/*
+ * This is a manifest file that'll be compiled into application.cnss, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+ */
+@import "bootstrap";
+
+@import url('https://fonts.googleapis.com/css?family=Patua+One');
+
+body {
+  background-image: url("http://image.shutterstock.com/z/stock-photo-vintage-world-map-background-72405055.jpg");
+  font-family: 'Patua One', cursive;
+
+}
+
+.navbar {
+  background: #262626;
+    }
+
+li.nav-item > a.nav-link {
+  color: white;
+}
+a, h1, h2, p, body {
+  color: white;
+}
+
+.mynav {
+  display: inline;
+  padding: 5px 45px 0px 5px;
+}
+
+h1 {
+  margin-top: 220px;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.9);
+  font-size: 65px;
+  text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.9);
+    margin-top: 30px;
+    text-align: center;
+}
+
+.tablediv {
+  margin-top: 85px;
+  background-color: rgba(38, 38, 38, 0.5);
+  text-align: center;
+  font-size: 20px;
+  padding: 20px 20px 40px 20px;
+    h1 {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+}
+table {
+  margin: 0 auto;
+}
+
+td, th {
+  text-align: center;
+  padding: 10px;
+}

@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+<div class="tablediv" style="margin-top: 0;">
+<h1>
+  <!-- <strong>Name:</strong> -->
+  <%= @country.name %>
+</h1>
+
+<p>
+  <!-- <strong>Image:</strong> -->
+  <%= image_tag @country.image, width: 400 %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @country.size %>
+</p>
+
+<p>
+  <strong>Population:</strong>
+  <%= @country.population %>
+</p>
+
+<p>
+  <strong>Language:</strong>
+  <%= @country.language %>
+</p>
+
+<p>
+  <strong>Gdp:</strong>
+  <%= @country.gdp %>
+</p>
+
+<p>
+  <strong>Continent:</strong>
+  <a href="/continents/<%=@country.continent_id%>">
+    <%= @country.continent.name %>
+  </a>
+</p>
+
+
+<%= link_to 'Edit', edit_country_path(@country) %> |
+<%= link_to 'Back', countries_path %>
+</div>
