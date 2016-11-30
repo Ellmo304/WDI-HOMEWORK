@@ -1,9 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
+<div class="tablediv">
+<h1>
+  <!-- <strong>Name:</strong> -->
   <%= @continent.name %>
-</p>
+</h1>
 
 <p>
   <strong>Countries:</strong>
@@ -16,3 +17,4 @@
 
 <%= link_to 'Edit', edit_continent_path(@continent) %> |
 <%= link_to 'Back', continents_path %>
+</div>
