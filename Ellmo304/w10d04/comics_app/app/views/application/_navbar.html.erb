@@ -1,0 +1,17 @@
+
+
+
+<nav class="navbar navbar-light bg-faded" style="height:80px;">
+  <div class="container">
+    <ul class="nav navbar-nav">
+      <li  class="mynav" ><%= link_to "Home", root_path %></li>
+      <% if logged_in? %>
+      <li class="mynav" style="padding: 5px 350px 5px 350px;">Hello, <%= current_user.username%>!</li>
+      <li  class="mynav"><%= link_to 'Logout', logout_path, method: :delete, data: {confirm: 'Are you sure?'} %></li>
+      <% else %>
+      <li  class="mynav"><%= link_to "Register", register_path %></li>
+      <li  class="mynav"><%= link_to "Login", login_path %></li>
+      <% end %>
+    </ul>
+  </div>
+</nav>

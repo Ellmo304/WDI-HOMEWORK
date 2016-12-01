@@ -18,7 +18,7 @@
       <tr>
         <td><%= comic.title %></td>
         <td><%= comic.author %></td>
-        <td><%= comic.image %></td>
+        <td><%= image_tag comic.image, width: 100 %></td>
         <td><%= comic.issue %></td>
         <td><%= link_to 'Show', comic %></td>
         <% if logged_in? %>
