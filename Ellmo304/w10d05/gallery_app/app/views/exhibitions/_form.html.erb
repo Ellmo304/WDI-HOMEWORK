@@ -1,0 +1,41 @@
+<%= form_for(exhibition) do |f| %>
+  <% if exhibition.errors.any? %>
+      <h2><%= pluralize(exhibition.errors.count, "error") %> prohibited this exhibition from being saved:</h2>
+
+      <% exhibition.errors.full_messages.each do |message| %>
+        <div class="alert alert-danger"><%= message %></div>
+      <% end %>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :artist %>
+    <%= f.text_field :artist, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :opening_date %>
+    <%= f.date_select :opening_date, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :closing_date %>
+    <%= f.date_select :closing_date, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :image %>
+    <%= f.text_field :image, class: 'form-control' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :body %>
+    <%= f.text_area :body, class: 'form-control' %>
+  </div>
+
+  <%= f.submit class: 'btn btn-primary' %>
+<% end %>

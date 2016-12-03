@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Galleries</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Nearest tube</th>
+      <th>Image</th>
+      <th>Body</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @galleries.each do |gallery| %>
+      <tr>
+        <td><%= gallery.name %></td>
+        <td><%= gallery.address %></td>
+        <td><%= gallery.nearest_tube %></td>
+        <td><%= image_tag gallery.image, width: 200 %></td>
+        <td><%= gallery.body %></td>
+        <td><%= link_to 'Show', gallery %></td>
+        <% if logged_in? %>
+        <td><%= link_to 'Edit', edit_gallery_path(gallery) %></td>
+        <td><%= link_to 'Destroy', gallery, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<% if logged_in? %>
+<%= link_to 'Add a new gallery', new_gallery_path %>
+<% end %>
