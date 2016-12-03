@@ -29,10 +29,10 @@ class ReviewsController < ApplicationController
     @review = Review.new(review_params)
     @review.user_id = current_user.id
     @review.author = current_user.username
-
+    
     respond_to do |format|
       if @review.save
-        format.html { redirect_to @review, notice: 'Review was successfully created.' }
+        format.html { redirect_to @review.exhibition, notice: 'Comment was successfully created.' }
         format.json { render :show, status: :created, location: @review }
       else
         format.html { render :new }
@@ -66,13 +66,13 @@ class ReviewsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_review
-      @review = Review.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_review
+    @review = Review.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def review_params
-      params.require(:review).permit(:title, :author, :date, :body, :rating, :user_id, :exhibition_id)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def review_params
+    params.require(:review).permit(:title, :author, :date, :body, :rating, :user_id, :exhibition_id)
+  end
 end

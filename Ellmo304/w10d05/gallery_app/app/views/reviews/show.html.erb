@@ -32,8 +32,8 @@
 
 <p>
   <strong>Exhibition:</strong>
-  <%= @review.exhibition %>
+  <a href="/exhibitions/<%=@review.exhibition.id%>"><%= @review.exhibition.name %></a>
 </p>
 
 <%= link_to 'Edit', edit_review_path(@review) %> |
-<%= link_to 'Back', reviews_path %>
+<%= link_to 'All recent reviews', reviews_path %>
