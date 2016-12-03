@@ -11,6 +11,15 @@
 </p>
 
 <p>
+  <strong>Current Exhibtions:</strong>
+  <ul>
+    <% @gallery.exhibitions.each do |exhibition| %>
+    <a href="/exhibitions/<%=exhibition.id%>"><li><%=exhibition.name%></li></a>
+    <% end %>
+  </ul>
+</p>
+
+<p>
   <strong>Nearest tube:</strong>
   <%= @gallery.nearest_tube %>
 </p>
