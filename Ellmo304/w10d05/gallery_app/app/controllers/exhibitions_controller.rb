@@ -1,5 +1,7 @@
 class ExhibitionsController < ApplicationController
   before_action :set_exhibition, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate, except: [:index, :show]
+
 
   # GET /exhibitions
   # GET /exhibitions.json
@@ -10,6 +12,7 @@ class ExhibitionsController < ApplicationController
   # GET /exhibitions/1
   # GET /exhibitions/1.json
   def show
+    @review = Review.new
   end
 
   # GET /exhibitions/new
