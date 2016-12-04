@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
 
+
+  resources :galleries
   resources :reviews
   resources :exhibitions
-  root 'galleries#index'
+
+  root 'static#home'
 
   get '/register', to: 'users#new'
 
@@ -14,6 +17,6 @@ Rails.application.routes.draw do
 
   delete '/logout', to: 'sessions#destroy'
 
-  resources :galleries
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

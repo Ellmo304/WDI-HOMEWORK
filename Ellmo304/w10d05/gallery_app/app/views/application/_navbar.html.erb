@@ -3,9 +3,9 @@
 <nav class="navbar navbar-light bg-faded">
   <div class="container">
     <ul class="nav navbar-nav">
-      <li  class="mynav" ><%= link_to "Home", root_path %></li>
-      <li  class="mynav" ><%= link_to "All Galleries", 'galleries#index' %></li>
-      <li  class="mynav" ><%= link_to "All Exhibtions", 'exhibitions#index' %></li>
+      <li  class="mynav" ><%= link_to "ArtHub", root_path %></li>
+      <li  class="mynav" ><%= link_to "All Galleries", '/galleries' %></li>
+      <li  class="mynav" ><%= link_to "All Exhibtions", '/exhibitions' %></li>
       <% if logged_in? %>
       <li class="mynav">Hello, <%= current_user.username%>!</li>
       <li  class="mynav"><%= link_to 'Logout', logout_path, method: :delete, data: {confirm: 'Are you sure?'} %></li>
