@@ -65,3 +65,56 @@ The gallery has blockbuster exhibitions, music concerts and courses that do carr
 
 There are free sessions for families on Sundays and during school holidays, too. These give children aged five to 12 the chance to experience the grand gallery atmosphere whilst getting creative in drawing and art workshops designed for their level of interest. These are drop-in, but demand can be high, so you might have to wait for spaces unless you arrive early."
 }])
+
+
+Exhibition.create!([{
+  name: "Guerrilla Girls",
+  artist: "Guerrilla Girls",
+  opening_date: DateTime.new(2016, 11, 23),
+  closing_date: DateTime.new(2017, 5, 5),
+  image: "https://media.timeout.com/images/102987576/750/422/image.jpg",
+  body: "The Guerrilla Girls are some of the art world’s most creative complainers, and for over 30 years now, they have been handing America’s galleries their arses on a platter. For their show at the Whitechapel Gallery, they’ve turned their attentions to Europe.
+
+This entire exhibition is based on a survey they sent out to 400 art institutions across 29 countries on the continent. In it, they demand stats for their representation of female artists, those who are gender non-conforming and artists of colour. Spoiler: it doesn’t go well.
+
+As the Guerrilla Girls announce on a banner on the front of the Whitechapel building, ‘only one quarter’ of those contacted responded (disappointingly, the Serpentine and the Saatchi Gallery were among the no-shows). The completed questionnaires are pasted onto the gallery wall, filled with the urgently scrawled handwriting of gallery directors. Put your contacts in, because there’s a whole lot of reading required for this show.
+
+Colourful posters pull out some of the best responses; when asked if it was the first time they’d collected such stats, Manchester Art Gallery replied: ‘No, we talk about these issues a lot’ – but the Guerrillas point out that their collection is still ‘80 percent male and 85 percent white’. The average representation of women artists was a pathetic 22 percent. One of the few glimmers of hope was Poland, where that figure was 28 percent and all but one of the responding galleries had a female director.
+
+  Informative as all this is, there’s not a great deal going on here visually: before entering the show, there’s a brief video of old news clips and Guerrilla Girls interview items, but you have to stand awkwardly in a corridor to watch it. These artists are brilliant orators, and a stronger audio-visual element would have hammered the their message home. After 15 minutes of scanning printouts, it starts to feel a little dry.
+
+But the group wanted the numbers to speak for themselves, and it’s not hard to see why. These are the galleries that spoon-feed us our art, and shape our definition of what’s ‘worth’ seeing. These are the museums that curate our visual history through their collections, and we can’t afford not to question them when our history is rewritten as 80 percent male and 85 percent white. If it weren’t for the Guerrilla Girls, they’d get to keep on pretending those arses were squeaky clean. ",
+  gallery_id: 1
+},
+{
+  name: "Glasses",
+  artist: "Luc Tuymans",
+  opening_date: DateTime.new(2016, 11, 23),
+  closing_date: DateTime.new(2017, 3, 27),
+  image: "https://media.timeout.com/images/103555466/750/422/image.jpg",
+  body: "Luc Tuymans makes boring paintings. Well, kind of. The Belgian artist has always made pictures that seemingly deal with banal and everyday subject matter – but there's always more hovering behind their bleached, scratchy surfaces. In this new show, he's keeping the concept simple: portraits of people wearing glasses. ",
+  gallery_id: 2
+},
+{
+  name: "Picasso Portraits",
+  artist: "Pablo Picasso",
+  opening_date: DateTime.new(2016, 11, 23),
+  closing_date: DateTime.new(2017, 2, 5),
+  image: "https://media.timeout.com/images/103244015/750/422/image.jpg",
+  body: "The Modern Lovers have a song that goes ‘Pablo Picasso never got called an asshole’. Which is surprising, because the way Pablo treated women you’d imagine that he got called a lot worse than that. Really, this show should be called ‘Picasso, Old Lech’, because his portraits tell a story of a man who didn’t just love women, but consumed them, used them, abused them and then chucked ’em aside. But we’ll get to that.
+
+The first work you see here is a bold early self-portrait of the artist with his palette, his shirt rendered as a slab of off-white, his youthful features full of strength.
+
+Another room finds young Pablo in Paris, lost in a world of art, friends and partying. There’s an incredibly grotesque image of his friend Gustave Coquiot in a swirl of dancers and a genuinely stunning Blue Period portrait of Sebastia Junyer i Vidal.
+
+Then Picasso heads into cubism, thanks in part to the model Fernande Olivier, who features in so many of his works. Portraits of her and one absolute stunner depicting the art dealer Daniel-Henry Kahnweiler find Picasso on the path to greatness.
+
+You then walk through a corridor of Picasso’s caricatures – which are interesting more than brilliant – and a room of almost totally unflattering portraits of his first wife Olga. But don’t be surprised that a lot of the paintings here far from good. Picasso created a lot of work, and any show of his is bound to include a good fistful of guff.
+
+The last room – the show's biggest and best – is where everything starts to make sense. There’s a near total lack of men, it’s just Picasso stumbling from woman to woman, from marriage to affair to marriage to affair, and he documents his lust in paint. There’s Dora Maar as a flattened assemblage of soft lumps, Marie-Thérèse Walter as a gently undulating collection of primary coloury, a stunning fragile vision of Nusch Eluard, a twisted rendering of Lee Miller and an image of his last wife Jacqueline Roque in a headscarf staring straight out at you, patient as a saint.
+
+This room is a document of lust, of avarice and selfishness, of love that bloomed and faded. Regret only seems to shine through in one painting, depicting his by-then ex-lover sat behind their children as they draw – it’s the only image tinged with a sense of ‘whoops, maybe I should’ve been a bit less of a shit’.
+
+You might be thinking that all this is irrelevant, that you should take the paintings at face value. But that’s the thing about portraiture: it’s never just about the paint on the canvas, it’s about the story being told, the person being depicted, the why, the when, the how. You don’t leave this show thinking Picasso was any worse an artist than you went in thinking he was, but you might leave thinking less of him as a person. Even when they're not all great, getting to walk through room after room of Picassos is always going to be a treat. It’s just a shame he was such an asshole.",
+  gallery_id: 2
+}])

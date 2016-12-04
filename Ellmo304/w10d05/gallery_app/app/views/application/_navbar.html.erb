@@ -5,7 +5,7 @@
     <ul class="nav navbar-nav">
       <li  class="mynav" ><%= link_to "ArtHub", root_path %></li>
       <li  class="mynav" ><%= link_to "All Galleries", '/galleries' %></li>
-      <li  class="mynav" ><%= link_to "All Exhibtions", '/exhibitions' %></li>
+      <li  class="mynav" ><%= link_to "All Exhibitions", '/exhibitions' %></li>
       <% if logged_in? %>
       <li class="mynav">Hello, <%= current_user.username%>!</li>
       <li  class="mynav"><%= link_to 'Logout', logout_path, method: :delete, data: {confirm: 'Are you sure?'} %></li>

@@ -1,14 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
+<h1>
   <%= @exhibition.name %>
-</p>
+</h1>
 
-<p>
-  <strong>Artist:</strong>
-  <%= @exhibition.artist %>
-</p>
+<h3>
+  <strong><%= @exhibition.artist %></strong>
+
+</h3>
 
 <p>
   <strong>Gallery:</strong>
@@ -26,25 +25,28 @@
 </p>
 
 <p>
-  <strong>Image:</strong>
-  <%= @exhibition.image %>
+  <!-- <strong>Image:</strong> -->
+  <%= image_tag @exhibition.image, width: 550 %>
 </p>
 
 <p>
-  <strong>Body:</strong>
+  <strong>About:</strong>
   <%= @exhibition.body %>
 </p>
 
 
 <p>
-  <strong>Reviews:</strong>
+  <strong>ArtHub User Reviews:</strong>
   <ul>
     <% @exhibition.reviews.each do |review| %>
       <li>
         <a href="/reviews/<%=review.id%>"><strong><%= review.title %></strong>
-        <%= review.author %>
-        <%= review.date %>
-        <%= review.rating %></a>
+          <br>
+        - <%= review.author %>
+        - <%= review.date%>
+        <br>
+        <strong><%= review.rating %>/5</strong>
+        </a>
       </li>
     <% end %>
   </ul>
@@ -88,5 +90,8 @@
   <%= f.submit class: 'btn btn-primary' %>
 <% end %>
 
-<%= link_to 'Edit', edit_exhibition_path(@exhibition) %> |
+<% if logged_in? %>
+<%= link_to 'Edit Exhibition', edit_exhibition_path(@exhibition) %> |
+<%= link_to 'Delete Exhibition', @exhibition, method: :delete, data: { confirm: 'Are you sure?' } %> |
+<% end %>
 <%= link_to 'Back', exhibitions_path %>

@@ -1,37 +1,24 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Exhibitions</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Artist</th>
-      <th>Opening date</th>
-      <th>Closing date</th>
-      <th>Image</th>
-      <th>Body</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @exhibitions.each do |exhibition| %>
-      <tr>
-        <td><%= exhibition.name %></td>
-        <td><%= exhibition.artist %></td>
-        <td><%= exhibition.opening_date %></td>
-        <td><%= exhibition.closing_date %></td>
-        <td><%= exhibition.image %></td>
-        <td><%= exhibition.body %></td>
-        <td><%= link_to 'Show', exhibition %></td>
-        <td><%= link_to 'Edit', edit_exhibition_path(exhibition) %></td>
-        <td><%= link_to 'Destroy', exhibition, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
 <br>
 
-<%= link_to 'Add A New Exhibition', new_exhibition_path %>
+
+<% @exhibitions.each do |exhibition| %>
+<div class="col-md-4 galleryCard">
+<a href="/exhibitions/<%=exhibition.id%>">
+  <h3><%= exhibition.name %></h3>
+  <h5><%= exhibition.artist %></h5>
+  <%= image_tag exhibition.image, width: 350 %>
+  <h6>On until: <%= exhibition.closing_date %></h6>
+  <h6>At the <%=exhibition.gallery.name%></h6>
+</a>
+</div>
+<% end %>
+
+<br>
+<button class="big">
+<% if logged_in? %>
+<%= link_to 'Click here to add a new exhibition', new_exhibition_path %>
+<% end %>
+</button>

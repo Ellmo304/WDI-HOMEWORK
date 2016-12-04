@@ -18,13 +18,25 @@ body {
   text-align: center;
 }
 
+li {
+  list-style-type: none;
+}
+
 .navbar {
   background: white;
   border-bottom: 2.5px solid #333333;
-  color: white;
+  color: #333333;
   a {
     color: #333333;
   }
+}
+
+.big {
+  background: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 2px solid lightgrey;
+  border-radius: 10px;
 }
 
 .mynav {

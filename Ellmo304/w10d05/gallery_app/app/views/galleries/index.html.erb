@@ -2,10 +2,7 @@
 
 <h1>Galleries</h1>
 <br>
-<% if logged_in? %>
-<%= link_to 'Click here to add a new gallery', new_gallery_path %>
-<% end %>
-<br>
+
 
 <% @galleries.each do |gallery| %>
 <div class="col-md-4 galleryCard">
@@ -15,11 +12,12 @@
 <h6><%= gallery.address %></h6>
 <h6>Nearest tube: <%= gallery.nearest_tube %></h6>
 </a>
-<!-- <%= gallery.body %> -->
-<!-- <%= link_to 'Show', gallery %> -->
-<% if logged_in? %>
-<!-- <%= link_to 'Edit', edit_gallery_path(gallery) %> -->
-<!-- <%= link_to 'Destroy', gallery, method: :delete, data: { confirm: 'Are you sure?' } %> -->
-<% end %>
 </div>
 <% end %>
+
+<br>
+<button class="big">
+<% if logged_in? %>
+<%= link_to 'Click here to add a new gallery', new_gallery_path %>
+<% end %>
+</button>
