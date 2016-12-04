@@ -14,20 +14,57 @@
 
 @import "bootstrap";
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 body {
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: #3366ff;
 }
 
 li {
+  margin-left: -38px;
   list-style-type: none;
 }
 
+// .navbar {
+//   li {
+//     margin-left: 38px;
+//   }
+//   background: #3366ff;
+//   // border: 2.5px solid #333333;
+//   color: white;
+//   a {
+//     color: white;
+//   }
+// }
+
 .navbar {
+  li {
+    padding: 0px 95px 0px 95px;
+  }
+  #logo {
+    font-weight: bolder;
+    font-size: 25px;
+    a {
+      color: #3366ff;
+    }
+    :hover {
+      color: #333333;
+    }
+  }
   background: white;
-  border-bottom: 2.5px solid #333333;
+  border-bottom: 2.5px solid #3366ff;
   color: #333333;
   a {
     color: #333333;
+  }
+  a:hover {
+    color: #3366ff;
+    text-decoration: none;
   }
 }
 
@@ -54,11 +91,12 @@ li {
 .homehead {
   text-align: left;
   padding-left: 30px;
+  text-shadow: 3px 3px 3px #999999;
   a{
     color: #333333;
   }
   a:hover {
-    color: #0275d8;
+    color: #3366ff;
     text-decoration: none;
   }
 }

@@ -6,34 +6,31 @@
 </p>
 
 <p>
-  <strong>Author:</strong>
+  <strong>Posted By:</strong>
   <%= @review.author %>
 </p>
 
 <p>
-  <strong>Date:</strong>
+  <strong>Date Posted:</strong>
   <%= @review.date %>
 </p>
 
 <p>
-  <strong>Body:</strong>
+  <strong>Review:</strong>
   <%= @review.body %>
 </p>
 
 <p>
   <strong>Rating:</strong>
-  <%= @review.rating %>
+  <%= @review.rating %>/5
 </p>
 
 <p>
-  <strong>User:</strong>
-  <%= @review.user %>
-</p>
-
-<p>
-  <strong>Exhibition:</strong>
+  <strong>See This Exhibition:</strong>
   <a href="/exhibitions/<%=@review.exhibition.id%>"><%= @review.exhibition.name %></a>
 </p>
 
 <%= link_to 'Edit', edit_review_path(@review) %> |
-<%= link_to 'All recent reviews', reviews_path %>
+<%= link_to 'Delete', @review, method: :delete, data: { confirm: 'Are you sure?' } %> |
+<%= link_to 'All recent reviews', reviews_path %> |
+<%= link_to 'Back', exhibition_path(@review.exhibition.id) %>

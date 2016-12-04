@@ -52,6 +52,8 @@
   </ul>
 </p>
 
+
+<% if logged_in? %>
 <p>
   <strong>Review this exhibition:</strong>
 </p>
@@ -90,7 +92,7 @@
   <%= f.submit class: 'btn btn-primary' %>
 <% end %>
 
-<% if logged_in? %>
+
 <%= link_to 'Edit Exhibition', edit_exhibition_path(@exhibition) %> |
 <%= link_to 'Delete Exhibition', @exhibition, method: :delete, data: { confirm: 'Are you sure?' } %> |
 <% end %>
